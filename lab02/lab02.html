@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+</head>
+
+<body style="background-color:rgba(60,179,113,0.2);">
+    <main>
+
+    </main>
+    <h1 style="background-color:rgb(0,102,0)">Rei do Mate</h1>
+    <h3>Conheça nossos produtos aqui! </h3>
+    <h3>..Seja um franqueado..</h3>
+
+    <h3>Nasce o Rei do Mate</h3>
+    <p>A história de sucesso do REI DO MATE, começou na década de 70, durante esses anos a marca foi se reposicionando
+        no mercado e hoje somos uma das maiores redes de alimentação do Brasil.</p>
+    <p>Nossa proposta era simples e inovadora, vender mate gelado, mate com leite em pó e com alguns sabores de frutas.
+        Em pouco tempo a ideia conquistou a admiração e fidelidade dos consumidores cada vez mais abertos aos apelos de
+        uma vida saudável.</p>
+    <p>A primeira loja franqueada foi inaugurada em 1992.</p>
+
+    </main>
+
+    <ul>
+        <u>
+            <li>Sobre</li>
+        </u>
+        <u>
+            <li>Cardápio</li>
+        </u>
+        <u>
+            <li>Lojas</li>
+        </u>
+        <u>
+            <li>Contato</li>
+        </u>
+
+    </ul>
+
+    <u>
+        <h3>Sobre</h3>
+    </u>
+    <p>Rei do Mate é uma rede de casas de chá brasileira. A empresa surgiu em 1978 em São Paulo, criada por Kalil
+        Nasraui e em 2015 contava com mais de 340 lojas espalhadas em 20 estados do país.</p>
+    <p>Os principais produtos comercializados na rede são chás, cafés e pães de queijo, mas opções de taças de açaí,
+        sanduíches, sucos, bolos e doces também são encontradas no menu.Estima-se que sejam comercializados 1,2 milhões
+        de copos de chá mate, 400 mil xícaras de café e 7 milhões de pães de queijo todos os anos.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aYZK26YnEdw?si=z2L-cfoZeW10f41k"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <u>
+        <h3>Cardápio</h3>
+    </u>
+    <ol>
+        <li>Açaí do Seu Jeito</li>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9pbdBY5Fs-Vv_k1RiodzwjraktRhU_ORiAA&s"
+            alt="Imagem Acai" width="100">
+        <br>
+        <li>Brownie com Sorvete e calda</li>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOVrgw_k4gOLvU_iqo9NHDfs0yXMgs56GOCHtLFHg7HirudZn-DkI-OxB-du09AtWCiCM&usqp=CAU"
+            alt="Imagem Brownie" width="100">
+        <br>
+        <li>Waffle de pão de queijo</li>
+        <br>
+        <img src="https://static.ifood-static.com.br/image/upload/t_high/pratos/2fbb33a4-38e5-4d00-a3f9-9f1cbc0e5582/202107201226_3355_f.png"
+            alt="Imagem waffle " width="100">
+        <br>
+        <li>Baby Churros</li>
+        <br>
+        <img src="https://static.ifood-static.com.br/image/upload/t_high/pratos/2fbb33a4-38e5-4d00-a3f9-9f1cbc0e5582/202107201312_2615_f.png"
+            alt="Imagem Churros" width="100">
+
+    </ol>
+
+    <u>
+        <h3>Lojas</h3>
+    </u>
+    Encontre o Rei do Mate mais próximo de você!
+    <br>
+    Busque pela sua região ou ative sua localização para uma busca mais otimizada
+    <div class="container">
+        <label for="Lojas">Lojas proximas: </label>
+        <select id="lojas" name="lojas">
+            <option value="Alphaville Campinas">Alphaville Campinas</option>
+            <option value="Iguatemi Campinas">Iguatemi Campinas</option>
+            <option value="Acqua Galleria">Acqua Galleria</option>
+            <option value="Tauste Shopping Center">Tauste Shopping Center</option>
+
+
+        </select>
+    </div>
+
+    <u>
+        <h3>Contato</h3>
+    </u>
+    <form action="/enviar_formulario" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+
+        <u>
+            <h3>Gráfico em Canvas</h3>
+        </u>
+        <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            var c = document.getElementById("meuCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "MediumSeaGreen";
+            ctx.fillRect(20, 20, 150, 75);
+        </script>
+
+        <u>
+            <h3>Gráfico SVG</h3>
+        </u>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="green" />
+        </svg>
+
+
+
+
+
+    </form>
+    <footer>
+        <p>© Rei do Mate</p>
+    </footer>
+</body>
+
+</html>
